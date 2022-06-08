@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * prints_to_98 - prints all natural numbers from n to 98
+ * prints_to_98 - prints all natural numbers from n to 98, followed by a new line
  * @n: the number to start counting from n to 98
  * Return: Always 0
  */
