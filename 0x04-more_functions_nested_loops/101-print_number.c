@@ -5,7 +5,7 @@
  * @n: input integer parameter
  * Return: void
  */
-void print_number(int n);
+void print_number(int n)
 {
 	unsigned int i = n;
 
