@@ -24,11 +24,11 @@ char *str_concat(char *s1, char *s2)
 	if (!ptr)
 		return (NULL);
 
-	for (x = 0; s1[x]; x++)
-		ptr[str++] = s1[x];
+	for (x = 0; x < s1; x++)
+		ptr[x] = s1[x];
 
-	for (x = 0; s2[x]; x++)
-		ptr[str++] = s2[x];
+	for (y = 0; y < (s2 + 1); y++)
+		ptr[x + y] = s2[y];
 
 	return (ptr);
 }
