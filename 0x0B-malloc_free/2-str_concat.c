@@ -10,20 +10,23 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int x, str = 0; y = 0;
+	int x, y, str;
 
 	if (!s1)
 		s1 = "";
 	if (!s2)
 		s2 = "";
+
 	for (x = 0; s1[x] || s2[x]; x++)
 		y++;
 	ptr = malloc(sizeof(char) * y);
 
 	if (!ptr)
 		return (NULL);
+
 	for (x = 0; s1[x]; x++)
 		ptr[str++] = s1[x];
+
 	for (x = 0; s2[x]; x++)
 		ptr[str++] = s2[x];
 
