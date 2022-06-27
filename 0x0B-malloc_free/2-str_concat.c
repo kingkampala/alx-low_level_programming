@@ -10,7 +10,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int size1, size2;
+	int size1;
+	int size2;
 	int x, y;
 
 	if (!s1)
