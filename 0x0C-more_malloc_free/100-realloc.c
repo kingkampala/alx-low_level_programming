@@ -28,6 +28,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (ptr);
 	}
 	ppttrr = malloc(new_size);
+
 	if (old_size > new_size)
 		old_size = new_size;
 	for (x = 0; x < old_size; x++)
