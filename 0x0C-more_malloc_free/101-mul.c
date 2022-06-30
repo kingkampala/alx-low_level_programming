@@ -12,7 +12,7 @@ int main(int argc, char *argv[]);
  * _is_zero - determines if any number is zero
  * @argv: arguement vector
  *
- * Return: Always 0
+ * Return: no return
  */
 void _is_zero(char *argv[])
 {
