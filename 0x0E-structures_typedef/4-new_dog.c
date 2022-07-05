@@ -22,7 +22,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[Downer++])
 		;
 	ptr->name = malloc(Dname * sizeof(ptr->name));
-	if (!(ptr->name))
+	if (!ptr->name)
 	{
 		free(ptr);
 		return (NULL);
@@ -31,7 +31,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		ptr->name[x] = name[x];
 	ptr->age = age;
 	ptr->owner = malloc(Downer * sizeof(ptr->owner));
-	if (!(ptr->owner))
+	if (!ptr->owner)
 	{
 		free(ptr->name);
 		free(ptr);
