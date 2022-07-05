@@ -18,9 +18,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	Dname = Downer = 0;
 	while (name[Dname++])
-		return;
+		;
 	while (owner[Downer++])
-		return;
+		;
 	ptr->name = malloc(Dname * sizeof(ptr->name));
 	if (!(ptr->name))
 	{
