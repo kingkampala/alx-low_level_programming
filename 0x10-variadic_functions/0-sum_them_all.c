@@ -18,7 +18,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_start(kampala, n);
 
 	for (x = 0; x < n; x++)
-		sum += va_arg(kampala, int);
+		add += va_arg(kampala, int);
 	va_end(kampala);
 	return (add);
 }
