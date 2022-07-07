@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - print numbers
- * followed by a new line
  * @separator: string to be printed
  * @n: number of integers passed
  * Return: Always 0
