@@ -27,12 +27,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	for (x = 0; x < (idx - 1); x++)
 	{
-		if (!tail || (!(tail->next)))
+		if (!tail || (!tail->next))
 			return (NULL);
 		tail = tail->next;
 	}
 	new->next = tail->next;
 	tail->next = new;
-
 	return (new);
 }
